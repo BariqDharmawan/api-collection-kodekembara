@@ -1,0 +1,23 @@
+meta {
+  name: Get detail user
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{APP_DOMAIN}}/users/:id
+  body: multipartForm
+  auth: inherit
+}
+
+params:query {
+  ~: 
+}
+
+params:path {
+  id: 026743d3-ae3b-4c06-bdc7-33c9cf38a4a4
+}
+
+settings {
+  encodeUrl: true
+}

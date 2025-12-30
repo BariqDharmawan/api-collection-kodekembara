@@ -1,0 +1,19 @@
+meta {
+  name: Add new skill available
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{APP_DOMAIN}}/skill-availables
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  name: Rush Developer
+}
+
+settings {
+  encodeUrl: true
+}

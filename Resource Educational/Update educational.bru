@@ -1,0 +1,19 @@
+meta {
+  name: Update educational
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{APP_DOMAIN}}/educationals/d4bffe59-c5be-4d99-9472-1c1a8d289853
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  level: smy
+}
+
+settings {
+  encodeUrl: true
+}

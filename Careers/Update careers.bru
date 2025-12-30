@@ -1,0 +1,19 @@
+meta {
+  name: Update careers
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{APP_DOMAIN}}/careers/ea4164d4-1636-482b-8354-14c373e918d7
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  title: Frontend Developers
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,20 @@
+meta {
+  name: Add admin
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{APP_DOMAIN}}/admins
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  email: newadmin@kodekembara.com
+  password: password
+}
+
+settings {
+  encodeUrl: true
+}

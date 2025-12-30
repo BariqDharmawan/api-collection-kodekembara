@@ -1,0 +1,21 @@
+meta {
+  name: Update user
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{APP_DOMAIN}}/v1/users/update
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  age: 81
+  current_job: Sr Frontend Developer
+  educational_level_id: 71d827c8-ff6c-47e2-b0f9-d73403f894dd
+}
+
+settings {
+  encodeUrl: true
+}

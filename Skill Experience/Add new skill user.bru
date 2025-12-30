@@ -1,0 +1,20 @@
+meta {
+  name: Add new skill user
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{APP_DOMAIN}}/skill-experiences
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  skill_availables_id: 4457b11e-a319-4b59-8a04-e113f433bfb4
+  month_of_experience: 10
+}
+
+settings {
+  encodeUrl: true
+}

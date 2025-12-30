@@ -1,0 +1,19 @@
+meta {
+  name: Delete skill experience user
+  type: http
+  seq: 2
+}
+
+delete {
+  url: {{APP_DOMAIN}}/skill-experiences/:id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: e007db72-7f2d-43dc-bb53-096ece622996
+}
+
+settings {
+  encodeUrl: true
+}

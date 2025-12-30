@@ -1,0 +1,19 @@
+meta {
+  name: Get detail career
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{APP_DOMAIN}}/careers/:id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: 6f78f448-99bb-4156-bdfa-3dcaa24262bc
+}
+
+settings {
+  encodeUrl: true
+}

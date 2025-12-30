@@ -1,0 +1,19 @@
+meta {
+  name: Delete user
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{APP_DOMAIN}}/users/:id
+  body: multipartForm
+  auth: inherit
+}
+
+params:path {
+  id: acdbcf0a-10fa-4df7-bec7-1717aebdd1e0
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,19 @@
+meta {
+  name: Delete careers
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{APP_DOMAIN}}/careers/:id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: ae6589d7-88dd-4f94-adca-1016e2ea23e0
+}
+
+settings {
+  encodeUrl: true
+}

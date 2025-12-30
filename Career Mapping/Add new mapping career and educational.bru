@@ -1,0 +1,21 @@
+meta {
+  name: Add new mapping career and educational
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{APP_DOMAIN}}/career-education-mapping
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  career_available_id: 3f35067d-2495-4b65-b608-62f936cafbf4
+  educational_id: 9a808b68-a652-4ece-ab52-dd27947dbdfd
+  belief_weight: 0.9
+}
+
+settings {
+  encodeUrl: true
+}

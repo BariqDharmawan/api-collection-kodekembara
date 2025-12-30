@@ -1,0 +1,15 @@
+meta {
+  name: Get deleted career
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{APP_DOMAIN}}/careers/deleted
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

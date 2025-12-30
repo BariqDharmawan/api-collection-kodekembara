@@ -1,0 +1,15 @@
+meta {
+  name: Get all careers
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{APP_DOMAIN}}/careers
+  body: multipartForm
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

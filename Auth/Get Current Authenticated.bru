@@ -1,0 +1,15 @@
+meta {
+  name: Get Current Authenticated
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{APP_DOMAIN}}/auth/me
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,132 @@
+meta {
+  name: Get all skill available
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{APP_DOMAIN}}/skill-availables
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}
+
+example {
+  name: Get all skill available
+  
+  request: {
+    url: {{APP_DOMAIN}}/skill-availables
+    method: GET
+    mode: none
+  }
+  
+  response: {
+    headers: {
+      content-length: 1374
+      content-type: application/json; charset=utf-8
+      Date: Sun, 12 May 2024 12:01:31 GMT
+      Connection: keep-alive
+      Keep-Alive: timeout=5
+    }
+  
+    status: {
+      code: OK
+      text: 200
+    }
+  
+    body: {
+      type: json
+      content: '''
+        [
+            {
+                "id": "259a0d59-094a-4886-839a-568ad2b4759b",
+                "name": "Apache Kafka"
+            },
+            {
+                "id": "16ff2dd0-7223-4d37-8ba3-68b862e56676",
+                "name": "Apollo Developer"
+            },
+            {
+                "id": "27a2844f-c393-4c60-81bb-414162e658d3",
+                "name": "Docker"
+            },
+            {
+                "id": "4457b11e-a319-4b59-8a04-e113f433bfb4",
+                "name": "Flutter"
+            },
+            {
+                "id": "ba717437-8c77-47fb-b501-8c56e75e78f5",
+                "name": "Golang"
+            },
+            {
+                "id": "7107c5dc-0d4c-4181-bd84-2a893339133f",
+                "name": "GraphQL"
+            },
+            {
+                "id": "a8e19934-7be8-4b64-9177-a5b748de4197",
+                "name": "HTML/CSS"
+            },
+            {
+                "id": "8bd84521-8296-4f87-a7a6-e56b0ab1e100",
+                "name": "Java"
+            },
+            {
+                "id": "d27b9840-ae65-4e9e-ac00-9e0332711552",
+                "name": "Javascript"
+            },
+            {
+                "id": "18612a8f-d588-4886-a806-b454bdbbc310",
+                "name": "Kotlin"
+            },
+            {
+                "id": "a946b10d-5400-4f35-b739-8839639ee275",
+                "name": "Meta Tag Developer"
+            },
+            {
+                "id": "ed6971ff-ada4-4f33-a53f-30247119761a",
+                "name": "NodeJS"
+            },
+            {
+                "id": "8b4e9c09-039c-420f-aac4-9c4fd8b5bc8e",
+                "name": "PHP"
+            },
+            {
+                "id": "1cbbd4c6-cfe5-4986-a2a9-afeee2ab404a",
+                "name": "Python"
+            },
+            {
+                "id": "682e7f70-2bdc-46ee-9f04-e32a7efa08cd",
+                "name": "React"
+            },
+            {
+                "id": "3cd948c1-0a60-4169-b3bb-58fbbe3dabb9",
+                "name": "React Native Developer"
+            },
+            {
+                "id": "8ea4346c-f091-487d-a418-017a3f47c743",
+                "name": "Rush Developer"
+            },
+            {
+                "id": "cdcbd3d8-d0bd-4e97-9061-49a699070ef9",
+                "name": "Springboot"
+            },
+            {
+                "id": "77a67ab4-6b82-4e07-a3b5-e950ae3c6a3e",
+                "name": "Svelte Developer"
+            },
+            {
+                "id": "57edbf98-2e43-44b3-8da9-14e2529ff9f3",
+                "name": "Swift"
+            },
+            {
+                "id": "935baf67-6455-4ccf-8ba8-8ade5616bbb0",
+                "name": "Typescript"
+            }
+        ]
+      '''
+    }
+  }
+}

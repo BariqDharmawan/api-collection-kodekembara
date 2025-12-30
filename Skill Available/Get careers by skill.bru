@@ -1,0 +1,19 @@
+meta {
+  name: Get careers by skill
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{APP_DOMAIN}}/skill-availables/:id/careers
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: f4af73de-ad20-41f2-87e3-cc86bda9b261
+}
+
+settings {
+  encodeUrl: true
+}
