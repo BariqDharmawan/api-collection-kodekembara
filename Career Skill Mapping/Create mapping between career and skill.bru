@@ -1,0 +1,27 @@
+meta {
+  name: Create mapping between career and skill
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{APP_DOMAIN}}/career-skill-mapping
+  body: multipartForm
+  auth: inherit
+}
+
+headers {
+  Accept: application/json
+}
+
+body:multipart-form {
+  career_available_id: 4cf92600-8fb5-4861-aa4f-4a78be839727
+  skill_available_id: 190a926a-15d1-4cb5-87d3-ab2d531b348c
+  belief_weight: 0.88
+  min_experience_months: 16
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,20 @@
+meta {
+  name: Delete skill from career-skill mapping
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{APP_DOMAIN}}/careers/:id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: ae6589d7-88dd-4f94-adca-1016e2ea23e0
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

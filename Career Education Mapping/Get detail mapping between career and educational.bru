@@ -1,0 +1,28 @@
+meta {
+  name: Get detail mapping between career and educational
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{APP_DOMAIN}}/career-education-mapping/career/:id
+  body: multipartForm
+  auth: inherit
+}
+
+params:path {
+  id: d2c99ba2-497d-45c9-b13b-c41b46040412
+}
+
+headers {
+  Accept: application/json
+}
+
+body:multipart-form {
+  level: sd_
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

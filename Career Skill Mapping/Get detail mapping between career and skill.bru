@@ -1,17 +1,17 @@
 meta {
-  name: Get detail mapping between career and educational
+  name: Get detail mapping between career and skill
   type: http
-  seq: 3
+  seq: 2
 }
 
 get {
-  url: {{APP_DOMAIN}}/career-education-mapping/career/:id
+  url: {{APP_DOMAIN}}/career-skill-mapping/career/:careerId
   body: multipartForm
   auth: inherit
 }
 
 params:path {
-  id: b4c07175-10fc-4bbb-9c64-17d83805fd28
+  careerId: 91accc9f-fa72-4073-9453-315fab0cda86
 }
 
 headers {
@@ -24,4 +24,5 @@ body:multipart-form {
 
 settings {
   encodeUrl: true
+  timeout: 0
 }
