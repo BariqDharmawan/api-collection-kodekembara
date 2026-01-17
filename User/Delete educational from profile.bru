@@ -1,0 +1,20 @@
+meta {
+  name: Delete educational from profile
+  type: http
+  seq: 6
+}
+
+delete {
+  url: {{APP_DOMAIN}}/users/delete-education-taken/:educationId
+  body: none
+  auth: inherit
+}
+
+params:path {
+  educationId: da3493cd-30a6-408f-bd36-06bb9f4c03eb
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

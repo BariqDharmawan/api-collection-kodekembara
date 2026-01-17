@@ -5,11 +5,16 @@ meta {
 }
 
 get {
-  url: {{APP_DOMAIN}}/educationals/7d98e8d6-ecda-4066-9944-88fd9407040d
+  url: {{APP_DOMAIN}}/educationals/:id
   body: none
   auth: inherit
 }
 
+params:path {
+  id: da3493cd-30a6-408f-bd36-06bb9f4c03eb
+}
+
 settings {
   encodeUrl: true
+  timeout: 0
 }

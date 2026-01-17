@@ -1,0 +1,15 @@
+meta {
+  name: Get list mapping between career and skill
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{APP_DOMAIN}}/career-skill-mapping
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}
