@@ -5,15 +5,21 @@ meta {
 }
 
 put {
-  url: {{APP_DOMAIN}}/careers/ea4164d4-1636-482b-8354-14c373e918d7
+  url: {{APP_DOMAIN}}/careers/:id
   body: multipartForm
   auth: inherit
 }
 
+params:path {
+  id: 70a0125a-321e-49ad-8420-39052a97ab26
+}
+
 body:multipart-form {
-  title: Frontend Developers
+  title: Frontendz Developers
+  ~desc: oofoeef
 }
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

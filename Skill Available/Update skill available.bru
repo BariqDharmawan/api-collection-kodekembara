@@ -5,16 +5,21 @@ meta {
 }
 
 put {
-  url: {{APP_DOMAIN}}/skill-availables/e0d00045-9708-4af3-b81e-0ed78d3c68e8
+  url: {{APP_DOMAIN}}/skill-availables/:id
   body: multipartForm
   auth: inherit
 }
 
+params:path {
+  id: 92a07866-aa63-4a00-999d-e4202faca484
+}
+
 body:multipart-form {
-  name: Apaches
+  name: React JS
   ~: 
 }
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

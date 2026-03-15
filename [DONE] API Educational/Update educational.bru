@@ -1,0 +1,25 @@
+meta {
+  name: Update educational
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{APP_DOMAIN}}/educationals/:id
+  body: multipartForm
+  auth: inherit
+}
+
+params:path {
+  id: ac243869-4fac-4090-8576-9cefb4121253
+}
+
+body:multipart-form {
+  description: SMK RPL adalah SMK dengan jurusan yang berfokus pada software engineerz
+  ~level: SMK RPL
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

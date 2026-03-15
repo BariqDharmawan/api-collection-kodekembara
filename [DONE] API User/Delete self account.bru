@@ -1,0 +1,16 @@
+meta {
+  name: Delete self account
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{APP_DOMAIN}}/users/delete-self-account
+  body: multipartForm
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

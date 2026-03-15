@@ -1,0 +1,20 @@
+meta {
+  name: Get single educational
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{APP_DOMAIN}}/educationals/:id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: 71c3f85a-d366-4423-9d45-93e6e39aa268
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

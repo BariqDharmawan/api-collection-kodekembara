@@ -1,18 +1,18 @@
 meta {
-  name: Login
+  name: Add new careers
   type: http
-  seq: 1
+  seq: 2
 }
 
 post {
-  url: {{APP_DOMAIN}}/auth/login
+  url: {{APP_DOMAIN}}/careers
   body: multipartForm
   auth: inherit
 }
 
 body:multipart-form {
-  email: Anais_Spinka56@hotmail.com
-  password: password
+  title: Mobile Developer
+  desc: Bikin prompt yang bagus
 }
 
 settings {

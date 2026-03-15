@@ -1,19 +1,24 @@
 meta {
-  name: Delete user
+  name: Get detail user
   type: http
-  seq: 5
+  seq: 3
 }
 
-delete {
+get {
   url: {{APP_DOMAIN}}/users/:id
   body: multipartForm
   auth: inherit
 }
 
+params:query {
+  ~: 
+}
+
 params:path {
-  id: acdbcf0a-10fa-4df7-bec7-1717aebdd1e0
+  id: 0116d333-8c68-46ba-9222-e5c8946bc85c
 }
 
 settings {
   encodeUrl: true
+  timeout: 0
 }
